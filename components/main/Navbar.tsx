@@ -12,7 +12,13 @@ const Navbar = () => {
         >
          <div className="ml-[10px] hidden md:flex items-center space-x-2">
   {/* Logo with spin + heartbeat */}
-  <img src="/Navlogo.png" alt="Logo" className="w-10 h-10 animate-spin-heartbeat neon-glow" />
+  <Image
+    src="/Navlogo.png"
+    alt="Logo"
+    width={40}
+    height={40}
+    className="animate-spin-heartbeat neon-glow"
+  />
 
   <div className="ml-[10px] hidden md:block">
     <span className="font-bold text-1xl bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent neon-glow">
