@@ -13,7 +13,7 @@ const Navbar = () => {
          <div className="ml-[10px] hidden md:flex items-center space-x-2">
   {/*Logo with spin + heartbeat*/} 
   <Image
-    src="/navlogo.png"
+    src="/star.png"
     alt="Logo"
     width={40}
     height={40}
