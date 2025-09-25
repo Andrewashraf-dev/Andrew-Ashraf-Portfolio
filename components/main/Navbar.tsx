@@ -17,6 +17,7 @@ const Navbar = () => {
     alt="Logo"
     width={40}
     height={40}
+    unoptimized  // ✅ disables next/image optimization
     className="animate-spin-heartbeat neon-glow"
   />
   
