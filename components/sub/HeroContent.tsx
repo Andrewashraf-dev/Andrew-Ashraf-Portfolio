@@ -47,6 +47,47 @@ const HeroContent = () => {
             Software Engineer
           </motion.p>
         </motion.div>
+        <motion.div
+      variants={slideInFromLeft(0.8)}
+      initial="hidden"
+      animate="visible"
+      className="flex items-center text-neon-blue text-sm"
+      style={{
+        color: '#00f0ff',
+        textShadow: `
+          0 0 5px #00f0ff,
+          0 0 10px #00f0ff,
+          0 0 20px #00f0ff,
+          0 0 40px #00f0ff,
+          0 0 80px #00f0ff
+        `
+      }}
+    >
+      {/* Neon Location pin icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-4 w-4 mr-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="#00f0ff"
+        strokeWidth={2}
+        style={{
+          filter: 'drop-shadow(0 0 4px #00f0ff) drop-shadow(0 0 10px #00f0ff)'
+        }}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 21s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z"
+        />
+      </svg>
+       Cairo, Egypt
+    </motion.div>
 
         <motion.div variants={slideInFromLeft(0.8)} className="max-w-[600px] w-full">
           <Terminal />
@@ -66,14 +107,36 @@ const HeroContent = () => {
 
         {/* CTA Button */}
         <motion.a
-        href="/Andrew Ashraf Amin SWE.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          View CV
-        </motion.a>
+  href="/Andrew Ashraf Amin SWE.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  variants={slideInFromLeft(1)}
+  className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] flex items-center justify-center gap-2"
+>
+  {/* Eye icon SVG */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 text-white"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+    />
+  </svg>
+
+  View CV
+</motion.a>
+
       </div>
 
       {/* Right Section - Image with Neon Effect */}

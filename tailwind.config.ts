@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +16,7 @@ const config: Config = {
       },
       animation: {
         'spin-heartbeat': 'spin-heartbeat 8s linear infinite',
+        blink: 'blink 1s step-end infinite',
       },
       keyframes: {
         'spin-heartbeat': {
@@ -24,10 +26,15 @@ const config: Config = {
           '75%': { transform: 'rotate(270deg) scale(1.1)' },
           '100%': { transform: 'rotate(360deg) scale(1)' },
         },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
       },
     },
   },
-  plugins: [],
-}
 
-export default config
+  plugins: [],
+};
+
+export default config;

@@ -91,6 +91,11 @@ export const Skill_data = [
       src: "/linkedin.svg",
       href: 'https://www.linkedin.com/in/andrewashraf-/',
     },
+    {
+      name: "Email",
+      src: "/email.svg",
+      href: 'mailto:Andrew.Ashraf.Amin@gmail.com',
+    },
     
   ];
   

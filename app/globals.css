@@ -21,6 +21,142 @@
   }
 }
 
+/* SkillsAndTools.css */
+.skills-tools-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-tools-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+  background: #eee;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background: #007bff;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-badge {
+  background: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+}
+
+/* styles.css or globals.css */
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.neon-link {
+  position: relative;
+  padding: 4px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Soft purple neon glow on hover */
+.neon-glow-hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.neon-glow-hover:hover {
+  box-shadow:
+    0 0 8px #08c4dd,
+    0 0 15px #08c4dd,
+    0 0 20px #08c4dd;
+  background-color: rgba(8, 152, 235, 0.3) !important; /* soft purple glow bg */
+  border-color: #0cd5df !important;
+  color: #0cd5df !important;
+  cursor: pointer;
+}
+
+
+.neon-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: radial-gradient(circle, rgba(112,66,248,0.6) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.link-underline {
+  position: relative;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #7042f8;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover {
+  color: #bcaaff; /* optional */
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
 .animate-spin-heartbeat {
   animation: spin-heartbeat 8s linear infinite;
   display: inline-block; /* ensure transform applies properly */

@@ -1,33 +1,47 @@
-import React from "react";
-import ProjectCard from "../sub/ProjectCard";
+// components/Projects.tsx
+import React from 'react';
+import ProjectCard from '../sub/ProjectCard';
 
-const Projects = () => {
+type Project = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  githubLink: string;
+};
+
+const projects: Project[] = [
+  {
+    title: 'School Guide — Smart School Finder App',
+    description: 'An Android app that helps users find, compare, and apply to schools based on location, system, fees, and reviews. Developed using Kotlin, Java, Firebase, and Android Studio as a graduation project.',
+    imageUrl: './schoolsguide.png',
+    githubLink: 'https://github.com/Andrewashraf-dev/SchoolsGuide',
+  },
+  {
+    title: 'TicTacToe-XO-Game',
+    description: 'A console-based Tic Tac Toe game in C++ using OOP and the Minimax algorithm to play against AI or a friend.',
+    imageUrl: './project3.png',
+    githubLink: 'https://github.com/yourname/weather-app',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase projects, skills, and experience. Features smooth animations, a starry background, and a video-enhanced hero section.',
+    imageUrl: 'Portfolio.png',
+    githubLink: 'https://github.com/Andrewashraf-dev/Andrew-Ashraf-Portfolio',
+  },
+];
+
+const Projects: React.FC = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center py-20"
-      id="projects"
-    >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
-      </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/NextWebsite.png"
-          title="Schools Guide - Smart School Directory App"
-          description="An Android app developed as a graduation project, helping parents and students search, view, and compare schools by location and features."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="TicTacToe-XO-Game"
-          description="A console-based Tic Tac Toe game in C++ using Object-Oriented Programming and the Minimax algorithm. Play against AI or a friend."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+    <section id="projects" className="py-16 relative z-10 text-center">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-6 text-white underline underline-offset-4 decoration-blue-500">My Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {projects.map((project, idx) => (
+            <ProjectCard key={idx} project={project} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
