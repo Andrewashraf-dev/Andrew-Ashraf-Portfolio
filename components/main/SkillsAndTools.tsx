@@ -124,15 +124,20 @@ const SkillsAndTools: React.FC = () => {
 
   return (
     <Tooltip.Provider>
-      <section className="relative z-10 py-16 px-4 max-w-6xl mx-auto">
-        <h2 className="text-[40px] font-medium text-center text-gray-200 mb-12">
-          Skills
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            {" "}
-            &{" "}
-          </span>
-          Tools
-        </h2>
+<section id="skillsandtools" className="relative z-10 py-16 px-4 max-w-6xl mx-auto text-center">
+  <div className="text-center mb-10"> 
+    <h2 className="text-[30px] font-bold text-white underline underline-offset-2 decoration-blue-500">
+      Skills
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        {" "} & {" "}
+      </span>
+      Tools
+    </h2>
+  </div>
+
+
+
+
 
         <motion.div
           className="grid gap-8 md:grid-cols-3"

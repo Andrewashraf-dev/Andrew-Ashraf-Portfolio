@@ -15,7 +15,8 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
     <div className="block w-full max-w-sm transform transition-transform hover:scale-105 cursor-default">
-      <div className="bg-white/10 backdrop-blur-md shadow-lg rounded-xl overflow-hidden h-full flex flex-col border border-white/20">
+      <div className="bg-white/10 backdrop-blur-md shadow-lg rounded-xl overflow-hidden h-full flex flex-col border border-white/20
+                      transition-shadow duration-300 hover:shadow-[0_0_20px_#0ff]">
         <img
           src={project.imageUrl}
           alt={project.title}
@@ -28,7 +29,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-300 font-medium hover:underline cursor-pointer"
+            className="text-cyan-300 font-medium hover:underline cursor-pointer"
           >
             View Code →
           </a>

@@ -18,7 +18,7 @@ export const certifications: Certification[] = [
     provider: "ITI",
     year: "2025",
     certificateUrl: "/cert1.pdf",
-    color: "from-yellow-400 to-orange-500",
+    color: "from-red-800 to-red-600",
     icon: "/itii.png",
   },
   {
@@ -26,7 +26,7 @@ export const certifications: Certification[] = [
     provider: "Sololearn",
     year: "2025",
     certificateUrl: "/cert2.pdf",
-    color: "from-blue-500 to-indigo-600",
+    color: "from-yellow-300 to-orange-600",
     icon: "/cert2.png",
   },
   

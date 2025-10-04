@@ -17,6 +17,8 @@ const config: Config = {
       animation: {
         'spin-heartbeat': 'spin-heartbeat 8s linear infinite',
         blink: 'blink 1s step-end infinite',
+
+          wiggleRotate: 'wiggleRotate 2s linear infinite',
       },
       keyframes: {
         'spin-heartbeat': {
@@ -30,6 +32,13 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0' },
         },
+wiggleRotate: {
+  '0%': { transform: 'rotate(0deg)' },
+  '100%': { transform: 'rotate(360deg)' },
+},
+  
+
+
       },
     },
   },
