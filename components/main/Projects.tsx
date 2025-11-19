@@ -11,6 +11,18 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: 'ERP System For MaxAB E-Commerce',
+    description: 'A modular ERP built with Java Spring Boot and PostgreSQL, providing RESTful APIs for employee onboarding, contracts, and insurance, with dynamic document generation and ongoing expansion into authentication, payroll, and reporting.',
+    imageUrl: 'maxab-erp.png',
+    githubLink: 'https://github.com/Andrewashraf-dev/MaxAB-ERP',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase projects, skills, and experience. Features smooth animations, a starry background, and a video-enhanced hero section.',
+    imageUrl: 'Portfolio.png',
+    githubLink: 'https://github.com/Andrewashraf-dev/Andrew-Ashraf-Portfolio',
+  },
+  {
     title: 'School Guide — Smart School Finder App',
     description: 'An Android app that helps users find, compare, and apply to schools based on location, system, fees, and reviews. Developed using Kotlin, Java, Firebase, and Android Studio as a graduation project.',
     imageUrl: './schoolsguide.png',
@@ -21,12 +33,6 @@ const projects: Project[] = [
     description: 'A console-based Tic Tac Toe game in C++ using OOP and the Minimax algorithm to play against AI or a friend.',
     imageUrl: './project3.png',
     githubLink: 'https://github.com/yourname/weather-app',
-  },
-  {
-    title: 'Personal Portfolio Website',
-    description: 'A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase projects, skills, and experience. Features smooth animations, a starry background, and a video-enhanced hero section.',
-    imageUrl: 'Portfolio.png',
-    githubLink: 'https://github.com/Andrewashraf-dev/Andrew-Ashraf-Portfolio',
   },
 ];
 

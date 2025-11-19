@@ -46,11 +46,11 @@ const Navbar = () => {
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center justify-between gap-4 px-4 py-2 border border-[#7042f861] bg-[#0300145e] rounded-full text-gray-200">
           <Link href="#home" className="cursor-pointer link-underline">Home</Link>
-          <Link href="#about-me" className="cursor-pointer link-underline">About Me</Link>
           <Link href="#skillsandtools" className="cursor-pointer link-underline">Skills</Link>
           <Link href="#projects" className="cursor-pointer link-underline">Projects</Link>
           <Link href="#certifications" className="cursor-pointer link-underline">Certifications</Link>
           <Link href="#experience" className="cursor-pointer link-underline">Experience</Link>
+          <Link href="#about-me" className="cursor-pointer link-underline">About Me</Link>
           <Link href="#contact" className="cursor-pointer link-underline">Contact</Link>
         </div>
 
@@ -81,11 +81,11 @@ const Navbar = () => {
         <div className="md:hidden flex flex-col items-start bg-[#030014f5] px-4 py-4 rounded-lg text-gray-200 space-y-3 z-50">
           {[
             { href: "#home", label: "Home" },
-            { href: "#about-me", label: "About Me" },
             { href: "#skillsandtools", label: "Skills" },
             { href: "#projects", label: "Projects" },
             { href: "#certifications", label: "Certifications" },
             { href: "#experience", label: "Experience" },
+            { href: "#about-me", label: "About Me" },
             { href: "#contact", label: "Contact" },
           ].map(({ href, label }) => (
             <Link href={href} key={href}>

@@ -31,7 +31,7 @@ const experiences = [
   {
     company: "Bnaque Misr",
     role: "Internship",
-    duration: "September 2022 - December 2022",
+    duration: "September 2020 - December 2020",
     logo: "/banque-misr-logo.png", // replace with your actual logo path
     description:[
   "Assisted in banking operations and customer service to understand end-user needs.",

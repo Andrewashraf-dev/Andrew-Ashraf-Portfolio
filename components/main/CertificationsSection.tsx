@@ -25,7 +25,7 @@ export default function CertificationsSection() {
         </p>
 
         {/* Grid */}
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((cert: Certification, index: number) => (
             <div
               key={index}

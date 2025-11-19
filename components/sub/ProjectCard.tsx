@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <img
           src={project.imageUrl}
           alt={project.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-50 object-cover"
         />
         <div className="p-4 flex flex-col justify-between flex-grow text-white">
           <h3 className="text-lg font-semibold mb-2">{project.title}</h3>

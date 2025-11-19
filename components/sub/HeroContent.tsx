@@ -116,7 +116,7 @@ const HeroContent = () => {
 
         {/* CTA Button - Always visible */}
         <motion.a
-          href="/Andrew Ashraf Amin SWE.pdf"
+          href="/Andrew Ashraf Amin.pdf"
           target="_blank"
           rel="noopener noreferrer"
           variants={slideInFromLeft(0.8)}

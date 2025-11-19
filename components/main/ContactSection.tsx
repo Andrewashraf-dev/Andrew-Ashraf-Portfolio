@@ -8,7 +8,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   console.log("Submitting form...");
 
-  const form = e.currentTarget; // Save the form reference here
+  const form = e.currentTarget; 
 
   const data = new FormData(form);
 
