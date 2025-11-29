@@ -1,0 +1,8 @@
+![alt text](screenshots/Main.png)
+![alt text](screenshots/skills.png)
+![alt text](screenshots/skills-tools.png)
+![alt text](screenshots/projects.png)
+![alt text](screenshots/cert.png)
+![alt text](screenshots/exper.png)
+![alt text](screenshots/about.png)
+![alt text](screenshots/last.png)
