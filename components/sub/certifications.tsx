@@ -14,6 +14,14 @@ export interface CertificationStat {
 
 export const certifications: Certification[] = [
   {
+    title: "CS50 Introduction to Computer Science",
+    provider: "Harvard University",
+    year: "2025",
+    certificateUrl: "https://certificates.cs50.io/90df15b6-f3c4-48f0-bb73-9a9e7d5a0c67.pdf?size=letter",
+    color: "from-red-800 to-red-600",
+    icon: "/harverd.png ",
+  }, 
+  {
     title: "Asynchronous Web Development",
     provider: "ITI",
     year: "2025",
@@ -73,7 +81,7 @@ export const certifications: Certification[] = [
 ];
 
 export const certificationStats: CertificationStat[] = [
-  { label: "Certifications", value: "7" },
+  { label: "Certifications", value: "8" },
   { label: "Verified", value: "100%" },
   //{ label: "Cloud Platforms", value: "3" },
   { label: "Latest Year", value: "2025" },
